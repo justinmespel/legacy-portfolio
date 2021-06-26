@@ -3,6 +3,16 @@
 @import '~bootstrap/scss/bootstrap';
 @import './variables.scss';
 
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1;
+}
+
+.page {
+    padding: 0 1rem;
+    height: 100%;
+}
+
 .nav-bar-wrapper {
     width: 100%;
     position: fixed;
@@ -13,7 +23,9 @@
 }
 
 .router-container {
-    margin-bottom: $nav-bar-dekstop-width;
+    margin-bottom: $nav-bar-mobile-height;
+    width: 100vw;
+    height: calc(100vh - #{$nav-bar-mobile-height});
 }
 
 .btn-destyle {

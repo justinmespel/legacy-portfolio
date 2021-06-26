@@ -6,21 +6,19 @@
 
 
 // Usable along side Bootstrap 'sm' sizing
-@media (min-width: 576px) {
+@media (min-width: #{$size-sm}) {
 
 
 }
 
 // Usable along side Bootstrap 'md' sizing
-@media (min-width: 768px) {
-
-}
-
-// Usable along side Bootstrap 'lg' sizing
-@media (min-width: 992px) {
+@media (min-width: #{$size-md}) {
 
     .router-container {
         margin-left: $nav-bar-dekstop-width;
+        margin-bottom: 0;
+        height: 100vh;
+        width: calc(100vw - #{$nav-bar-dekstop-width});
     }
 
     .nav-bar-wrapper {
@@ -29,11 +27,17 @@
         right: auto;
         top: 0;
     }
+
+}
+
+// Usable along side Bootstrap 'lg' sizing
+@media (min-width: #{$size-lg}) {
+
     
 }
 
 // Usable along side Bootstrap 'xl' sizing
-@media (min-width: 1200px) {
+@media (min-width: #{$size-xl}) {
 
 
 }
