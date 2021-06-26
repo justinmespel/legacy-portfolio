@@ -21,8 +21,8 @@
     }
 }
 
-// Usable along side Bootstrap 'lg' sizing
-@media (min-width: 992px) {
+
+@media (min-width: #{$size-md}) {
 
     .nav-bar {
         flex-direction: column;

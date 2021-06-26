@@ -1,0 +1,39 @@
+@import '~/src/styles/styles.scss';
+
+.home-container {
+    padding-top: 5rem;
+}
+
+.hero-text {
+    font-size: calc(15vw);
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+    color: $color-grey-darker;
+}
+
+.sub-text {
+    color: $color-grey-dark;
+}
+
+.hero-text .sub-text {
+    width: 100%;
+}
+
+@media (min-width: #{$size-md}) {
+
+    .home-container {
+        height: 100vh;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: auto;
+        padding-top: 0;
+    }
+    
+    .hero-text {
+        font-size: 5rem;
+    }
+
+
+}
