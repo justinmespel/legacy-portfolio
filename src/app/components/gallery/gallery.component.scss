@@ -1,0 +1,14 @@
+@import '~/src/styles/styles.scss';
+
+.page {
+    background-color: $color-white;
+}
+
+
+@media (min-width: #{$size-md}) {
+
+    .home-container {
+        height: 100vh;
+    }
+
+}
