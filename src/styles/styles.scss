@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+@import './variables.scss';
+
+.nav-bar-wrapper {
+    width: 100%;
+    position: fixed;
+    height: $nav-bar-mobile-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.router-container {
+    margin-bottom: $nav-bar-dekstop-width;
+}
+
+.btn-destyle {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    color: auto;
+    background-color: transparent;
+}

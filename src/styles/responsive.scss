@@ -1,0 +1,39 @@
+/*
+* Responsive style sheet based on a mobile-first approach
+*/
+
+@import './variables.scss';
+
+
+// Usable along side Bootstrap 'sm' sizing
+@media (min-width: 576px) {
+
+
+}
+
+// Usable along side Bootstrap 'md' sizing
+@media (min-width: 768px) {
+
+}
+
+// Usable along side Bootstrap 'lg' sizing
+@media (min-width: 992px) {
+
+    .router-container {
+        margin-left: $nav-bar-dekstop-width;
+    }
+
+    .nav-bar-wrapper {
+        max-width: $nav-bar-dekstop-width;
+        height: 100%;
+        right: auto;
+        top: 0;
+    }
+    
+}
+
+// Usable along side Bootstrap 'xl' sizing
+@media (min-width: 1200px) {
+
+
+}
