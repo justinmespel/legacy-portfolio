@@ -4,7 +4,7 @@ import { Directive, Input, ElementRef } from "@angular/core";
 import { FaderProperties } from "../interfaces/fader.interface";
 
 @Directive({
-    selector: '[fader]', 
+	selector: '[appFader]', 
 })
 
 export class FadeInOutDirective {
@@ -14,23 +14,23 @@ export class FadeInOutDirective {
 
     @Input() set fadeSettings(params: FaderProperties) {
 
-      if (this.player) {
-        this.player.destroy();
-      }
+    	if (this.player) {
+    		this.player.destroy();
+    	}
 
-      console.log(params.speed)
+    	console.log(params.speed)
 
-      // Dynamically set the fader speed if provided
-      if (params.speed) {
-        this.speed = params.speed
-      }
+    	// Dynamically set the fader speed if provided
+    	if (params.speed) {
+    		this.speed = params.speed
+    	}
   
-      const metadata = params.show ? this.fadeIn() : this.fadeOut();
+    	const metadata = params.show ? this.fadeIn() : this.fadeOut();
   
-      const factory = this.builder.build(metadata);
-      const player = factory.create(this.el.nativeElement);
+    	const factory = this.builder.build(metadata);
+    	const player = factory.create(this.el.nativeElement);
   
-      player.play();
+    	player.play();
     }
   
     constructor(
@@ -40,16 +40,16 @@ export class FadeInOutDirective {
     {}
   
     private fadeIn(): AnimationMetadata[] {
-      return [
-        style({ opacity: 0 }),
-        animate(`${this.speed}ms ease-in`, style({ opacity: 1 })),
-      ];
+    	return [
+    		style({ opacity: 0 }),
+    		animate(`${this.speed}ms ease-in`, style({ opacity: 1 })),
+    	];
     }
   
     private fadeOut(): AnimationMetadata[] {
-      return [
-        style({ opacity: '*' }),
-        animate(`${this.speed}ms ease-in`, style({ opacity: 0 })),
-      ];
+    	return [
+    		style({ opacity: '*' }),
+    		animate(`${this.speed}ms ease-in`, style({ opacity: 0 })),
+    	];
     }
-  }
+}

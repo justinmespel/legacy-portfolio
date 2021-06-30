@@ -19,23 +19,24 @@ import { FadeInOutDirective } from './directives/fade.directive';
 /* Services */
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    NavBarComponent,
-    GalleryComponent,
-    AboutComponent,
-    ContactComponent,
+	declarations: [
+		AppComponent,
+		HomeComponent,
+		NavBarComponent,
+		GalleryComponent,
+		AboutComponent,
+		ContactComponent,
 
-    FadeInOutDirective
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    NgbModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+		FadeInOutDirective
+	],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		NgbModule,
+		BrowserAnimationsModule
+        
+	],
+	providers: [],
+	bootstrap: [AppComponent]
 })
 export class AppModule { }
