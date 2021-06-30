@@ -6,6 +6,6 @@ export class WorkLink {
     constructor(
         private data: Partial<WorkLink>
     ) {
-        Object.assign(this, data)
+    	Object.assign(this, data)
     }
 }

@@ -1,18 +1,26 @@
-import {WorkTool} from './work-tool.model';
-import {WorkLink} from './work-link.model';
+import { WorkTool } from './work-tool.model';
+import { WorkLink } from './work-link.model';
 import { ThrowStmt } from '@angular/compiler';
+import { WorkImage } from './work-image.model';
 
 export class Work {
 
     title!: string;
     description!: string;
-    tools!: WorkTool[]; 
+
+    images!: WorkImage[];
+    tools!: WorkTool[];
     links?: WorkLink[];
 
     constructor(
         private data: Partial<Work>
     ) {
         Object.assign(this, data)
+
+        if (data.images?.length) {
+            this.tools = [];
+            data.images.forEach((img) => this.images.push(new WorkImage(img)));
+        }
 
         if (data.tools?.length) {
             this.tools = [];

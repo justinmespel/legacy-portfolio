@@ -5,6 +5,6 @@ export class WorkTool {
     constructor(
         private data: Partial<WorkTool>
     ) {
-        Object.assign(this, data)
+    	Object.assign(this, data)
     }
 }
