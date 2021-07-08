@@ -1,0 +1,29 @@
+@import './variables.scss';
+
+/* Overridable styles that work with responsive stylesheet */
+.page-heading {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    margin-left: -1rem; // Clear container padding
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    color: $color-grey-darker;
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+    .hr-container {
+        width: calc(10vw);
+        margin-right: 1rem;
+        hr {
+            height: 1px;
+            width: 100%;
+            margin: 0;
+            background-color: $color-grey-darker;
+        }
+    }
+
+}
+

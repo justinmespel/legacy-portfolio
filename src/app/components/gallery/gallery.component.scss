@@ -7,8 +7,13 @@
 
 @media (min-width: #{$size-md}) {
 
-    .home-container {
-        height: 100vh;
+
+    .work-title {
+        font-size: calc(4vw);
+    }
+
+    .work-description {
+        font-size: 16px;
     }
 
 }

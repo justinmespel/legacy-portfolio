@@ -1,8 +1,15 @@
 <div class="page">
 
+    <div class="page-heading">
+        <div class="hr-container"><hr /></div>
+        <p class="m-0">Gallery</p>
+    </div>
+
     <div class="gallery-container" *ngFor="let work of fetchedWorks">
         <div class="col-12 col-md-5">
-                <h5>{{work.title}}</h5>
+            <h4 class="work-title">{{work.title}}</h4>
+
+            <p>{{work.description}}</p>
         </div>
     
         <div class="col-12 col-md-7">

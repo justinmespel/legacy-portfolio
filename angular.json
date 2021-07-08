@@ -32,6 +32,7 @@
             ],
             "styles": [
               "src/styles/styles.scss",
+              "src/styles/layout.scss",
               "src/styles/responsive.scss"
             ],
             "scripts": []

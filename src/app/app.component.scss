@@ -1,0 +1,36 @@
+@import '../styles/variables.scss';
+
+.nav-bar-wrapper {
+    width: 100%;
+    position: fixed;
+    height: $nav-bar-mobile-height;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.router-container {
+    margin-bottom: $nav-bar-mobile-height;
+    width: 100vw;
+    height: calc(100vh - #{$nav-bar-mobile-height});
+}
+
+
+// Usable along side Bootstrap 'md' sizing
+@media (min-width: #{$size-md}) {
+
+    .router-container {
+        margin-left: $nav-bar-dekstop-width;
+        margin-bottom: 0;
+        height: 100vh;
+        width: calc(100vw - #{$nav-bar-dekstop-width});
+    }
+
+    .nav-bar-wrapper {
+        max-width: $nav-bar-dekstop-width;
+        height: 100%;
+        right: auto;
+        top: 0;
+    }
+
+}

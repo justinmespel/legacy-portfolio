@@ -14,20 +14,14 @@
 // Usable along side Bootstrap 'md' sizing
 @media (min-width: #{$size-md}) {
 
-    .router-container {
-        margin-left: $nav-bar-dekstop-width;
-        margin-bottom: 0;
-        height: 100vh;
-        width: calc(100vw - #{$nav-bar-dekstop-width});
+    .page-heading {
+        padding-top: 2rem;
+        font-size: 1.5rem;
+        .hr-container {
+            width: 4rem;
+            margin-right: 1rem;
+        }
     }
-
-    .nav-bar-wrapper {
-        max-width: $nav-bar-dekstop-width;
-        height: 100%;
-        right: auto;
-        top: 0;
-    }
-
 }
 
 // Usable along side Bootstrap 'lg' sizing
