@@ -14,6 +14,10 @@
 // Usable along side Bootstrap 'md' sizing
 @media (min-width: #{$size-md}) {
 
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
     .page-heading {
         padding-top: 2rem;
         font-size: 1.5rem;
