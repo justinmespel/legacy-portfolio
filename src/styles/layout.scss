@@ -1,6 +1,8 @@
+/* 
+ * Overridable styles that work with responsive stylesheet 
+*/
 @import './variables.scss';
 
-/* Overridable styles that work with responsive stylesheet */
 .page-heading {
     padding-top: 1.5rem;
     padding-bottom: 2rem;
@@ -13,9 +15,10 @@
     font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: 1.5px;
+    background-color: $color-white;
 
     .hr-container {
-        width: calc(10vw);
+        width: calc(13vw);
         margin-right: 1rem;
         hr {
             height: 1px;

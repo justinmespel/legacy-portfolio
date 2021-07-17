@@ -1,3 +1,5 @@
+
+
 <div class="page">
 
     <div class="page-heading">
@@ -5,15 +7,39 @@
         <p class="m-0">Gallery</p>
     </div>
 
-    <div class="gallery-container" *ngFor="let work of fetchedWorks">
-        <div class="col-12 col-md-5">
-            <h4 class="work-title">{{work.title}}</h4>
-
-            <p>{{work.description}}</p>
-        </div>
+    <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index">
+        <div class="row">
+            <div class="col-12 col-md-5 ">
+                <h1 class="work-title">{{work.title}}</h1>
     
-        <div class="col-12 col-md-7">
-            <!--  Image Slider  -->
+                <p class="body-text">{{work.description}}</p>
+
+
+                <div class="mt-5" *ngIf="work?.tools?.length">
+                    <h4 class="text-uppercase font-12 font-weight-600 color-grey-darker">Tools</h4>
+
+                    <div class="row mt-3">
+                        <div class="col-6" *ngFor="let tool of work.tools">
+                            <p class="font-10 color-grey-light text-uppercase font-weight-500">{{tool.name}}</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="col-12 col-md-7">
+                <ngb-carousel [showNavigationIndicators]="false">
+                    <ng-template ngbSlide *ngFor="let image of work?.images; let i = index">
+                      <div class="slide-img-wrapper">
+                        <img [src]="image.src" alt="{{'Gallery image #' + (i + 1)}}">
+                      </div>
+                    </ng-template>
+                </ngb-carousel>
+            </div>
+        </div>
+
+        <div class="d-flex">
+            <hr class="work-divider" />
         </div>
     </div>
 

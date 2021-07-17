@@ -17,6 +17,7 @@
     .page-heading {
         padding-top: 2rem;
         font-size: 1.5rem;
+        margin-left: -4rem; // Clear container padding
         .hr-container {
             width: 4rem;
             margin-right: 1rem;
@@ -26,7 +27,6 @@
 
 // Usable along side Bootstrap 'lg' sizing
 @media (min-width: #{$size-lg}) {
-
     
 }
 

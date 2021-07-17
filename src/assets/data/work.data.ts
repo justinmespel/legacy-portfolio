@@ -11,18 +11,27 @@ export const Data: Work[] =  [
                 name: 'Adobe Photoshop' 
             }),
             new WorkTool({ 
+                name: 'Angular' 
+            }),
+            new WorkTool({ 
+                name: 'PHP' 
+            }),
+            new WorkTool({ 
+                name: 'SCSS Stylesheet' 
+            }),
+            new WorkTool({ 
                 name: 'VS Code' 
             })
         ],
         images: [
             new WorkImage({
                 descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                src: '',
+                src: 'assets/temp/gallery-image.png',
                 link: 'https://github.com'
             }),
             new WorkImage({
                 descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                src: '',
+                src: 'assets/temp/gallery-image.png',
                 link: 'https://github.com'
             }),
         ]
@@ -41,12 +50,12 @@ export const Data: Work[] =  [
         images: [
             new WorkImage({
                 descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                src: '',
+                src: 'assets/temp/gallery-image.png',
                 link: 'https://github.com'
             }),
             new WorkImage({
                 descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-                src: '',
+                src: 'assets/temp/gallery-image.png',
                 link: 'https://github.com'
             }),
         ]

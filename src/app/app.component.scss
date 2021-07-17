@@ -7,12 +7,14 @@
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 2;
 }
 
 .router-container {
     margin-bottom: $nav-bar-mobile-height;
     width: 100vw;
     height: calc(100vh - #{$nav-bar-mobile-height});
+    overflow: hidden;
 }
 
 
@@ -27,6 +29,7 @@
     }
 
     .nav-bar-wrapper {
+        width: $nav-bar-dekstop-width;
         max-width: $nav-bar-dekstop-width;
         height: 100%;
         right: auto;
