@@ -30,8 +30,6 @@
 
 @media (min-width: #{$size-md}) {
 
-
-
     .work-title {
         font-size: calc(4vw);
     }
@@ -45,7 +43,6 @@
         height: 1px;
         margin: 5rem auto;
     }
-
 }
 
 
@@ -59,7 +56,6 @@
     .page-heading {
         margin-left: -4rem; // Clear container padding
     }
-
 
     .work-title {
         font-size: 3.5rem;

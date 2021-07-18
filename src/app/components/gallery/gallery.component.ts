@@ -32,4 +32,9 @@ export class GalleryComponent implements OnInit {
     	console.log(this.fetchedWorks);
     }
 
+    public isEven(value: number): boolean {
+        return value % 2  == 0;
+    }
+    
+
 }

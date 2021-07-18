@@ -7,8 +7,8 @@
         <p class="m-0">Gallery</p>
     </div>
 
-    <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index">
-        <div class="row">
+    <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index; let last = last">
+        <div class="row" [ngClass]="{'flex-row-reverse':isEven(wi)}">
             <div class="col-12 col-md-5 ">
                 <h1 class="work-title">{{work.title}}</h1>
     
