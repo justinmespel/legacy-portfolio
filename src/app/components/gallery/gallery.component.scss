@@ -9,6 +9,7 @@
 .work-title {
     text-transform: uppercase;
     font-family: $font-roboto;
+    line-height: 1;
 }
 
 .slide-img-wrapper {
@@ -48,6 +49,10 @@
 
 // Usable along side Bootstrap 'lg' sizing
 @media (min-width: #{$size-lg}) {
+
+    p a {
+        font-size: 16px
+    }
 
     .page {
         padding: 1rem 3rem;

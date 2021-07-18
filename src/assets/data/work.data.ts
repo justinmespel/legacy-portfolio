@@ -1,10 +1,10 @@
-import { Work } from '../../app/models';
+import { Work, WorkLink } from '../../app/models';
 import { WorkImage } from '../../app/models';
 import { WorkTool } from '../../app/models';
 
 export const Data: Work[] =  [
     new Work({
-        title: 'Test Website',
+        title: 'Angular',
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
         tools: [
             new WorkTool({ 
@@ -22,6 +22,12 @@ export const Data: Work[] =  [
             new WorkTool({ 
                 name: 'VS Code' 
             })
+        ],
+        links: [
+            new WorkLink({ 
+                title: 'View source code',
+                src: 'https://github.com'
+            }),
         ],
         images: [
             new WorkImage({

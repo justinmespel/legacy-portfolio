@@ -34,9 +34,9 @@ body {
 
 /* Fonts */
 .body-text {
+    @extend .font-09;
     color: $color-grey-light;
     letter-spacing: 1px;
-    font-size: 0.9rem;
     line-height: 0.9rem;
 }
 
