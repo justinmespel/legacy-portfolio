@@ -13,6 +13,10 @@ body {
     height: 100%;
 }
 
+a:hover, a:focus {
+    color: $color-red;
+}
+
 /* Buttons */
 .btn-destyle {
     padding: 0;
