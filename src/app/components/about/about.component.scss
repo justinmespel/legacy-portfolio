@@ -1,0 +1,40 @@
+@import '~/src/styles/variables';
+
+.page {
+    background-color: $color-white;
+    overflow-y: scroll;
+}
+
+.profile-image-container {
+    width: 100%;
+    display: flex;
+    margin-top: 2rem;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.passions .body-text {
+    margin: 0;
+}
+
+.passion {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: #{$size-md}) {
+    .passions .body-text {
+        margin-top: 2rem;
+    }
+
+    .passion {
+        margin-bottom: 0;
+    }
+}
+
+// Usable along side Bootstrap 'lg' sizing
+@media (min-width: #{$size-lg}) {
+
+
+}

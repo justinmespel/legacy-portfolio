@@ -33,10 +33,27 @@
 // Usable along side Bootstrap 'lg' sizing
 @media (min-width: #{$size-lg}) {
     
+    .page {
+        padding: 1rem 3rem;
+    }
+
+    .page-heading {
+        margin-left: -4rem;
+    }
+
 }
 
 // Usable along side Bootstrap 'xl' sizing
 @media (min-width: #{$size-xl}) {
 
+    .page {
+        padding: 1rem 6rem;
+    }
 
+    .page-heading {
+        margin-left: -6rem;
+        .hr-container {
+            width: 4.5rem;
+        }
+    }
 }
