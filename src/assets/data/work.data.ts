@@ -5,7 +5,7 @@ import { WorkTool } from '../../app/models';
 export const Data: Work[] =  [
 	new Work({
 		title: 'Hell Ordering',
-		description: 'Bringing a fresh design to life! I was the lead developer working on Hell Pizza’s new ordering website. This platform is used by Hell customers all over New Zealand so performance and design was of the utmost importance.\n\nThe objective was create a new modern application for their most customer facing website. This involved refreshing their existing web features as well as implementing new ones. I went for a OOP approach using Angular 10 as this fit the clients preferred structure. Check out my design page to see how this project started.',
+		description: 'Bringing a fresh design to life! I was the lead developer working on Hell Pizza’s new ordering website. This platform is used by Hell customers all over New Zealand so performance and design was of the utmost importance.\n\nThe objective was create a new modern web application for their most customer facing website. This involved refreshing their existing web features and implementing new ones. I went for a OOP approach using Angular 10 as this fit the clients preferred structure. Check out my design page to see how this project started.',
 		tools: [
 			new WorkTool({ 
 				name: 'Angular 10' 
@@ -46,14 +46,50 @@ export const Data: Work[] =  [
 		]
 	}),
 	new Work({
+		title: 'Uber Intergration',
+		description: 'Managed development and communication between Uber Eats and Hell to create a seamless platform integration that scales for their increasing number of stores.\n\nDevelopment time was around 1 week using the existing API and backend to build the order. Logging and notifications are setup throughout the build proccess to help monitor the integration health. ',
+		tools: [ 
+			new WorkTool({ 
+				name: 'PHP'
+			}),
+			new WorkTool({
+				name: 'MySql'
+			}),
+			new WorkTool({ 
+				name: 'Postman' 
+			}),
+			new WorkTool({ 
+				name: 'Phinx' 
+			})
+		],
+		images: [
+			new WorkImage({
+				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				src: 'assets/temp/gallery-image.png',
+				link: 'https://github.com'
+			}),
+			new WorkImage({
+				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+				src: 'assets/temp/gallery-image.png',
+				link: 'https://github.com'
+			})
+		]
+	}),
+	new Work({
 		title: 'Driver App',
-		description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+		description: 'Sole developer of Hell’s in-house driver performance Android app - Styx Drive. This was developed using the Nativescript and Angular 8 framework as per the project specifications. \n\n The app communicates with Hell’s API to complete to do various internal tasks. It uses QR authentication and has a custom Java background service for location polling. You can view the asset creation on my design page.',
 		tools: [
 			new WorkTool({ 
 				name: 'Nativescript' 
 			}),
 			new WorkTool({ 
 				name: 'Angular 8' 
+			}),
+			new WorkTool({ 
+				name: 'PHP API' 
+			}),
+			new WorkTool({
+				name: 'Java'
 			})
 		],
 		images: [
