@@ -18,8 +18,6 @@ export class FadeInOutDirective {
     		this.player.destroy();
     	}
 
-    	console.log(params.speed)
-
     	// Dynamically set the fader speed if provided
     	if (params.speed) {
     		this.speed = params.speed
