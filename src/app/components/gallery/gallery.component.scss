@@ -12,6 +12,11 @@
     line-height: 1;
 }
 
+.work-description {
+    white-space: pre-line;
+}
+
+
 .slide-img-wrapper {
     display: flex;
 
@@ -27,6 +32,7 @@
     height: 1px;
     margin: 4rem auto;
 }
+
 
 
 @media (min-width: #{$size-md}) {

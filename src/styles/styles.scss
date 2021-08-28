@@ -7,6 +7,7 @@
 body {
     font-family: $font-work-sans;
     line-height: 1;
+    background-color: $color-grey-dark;
 }
 
 
@@ -38,7 +39,7 @@ a:hover, a:focus {
     @extend .font-09;
     color: $color-grey-light;
     letter-spacing: 1px;
-    line-height: 0.9rem;
+    line-height: 1.1rem;
 }
 
 .font-08 {

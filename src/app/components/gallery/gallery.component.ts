@@ -23,17 +23,13 @@ export class GalleryComponent implements OnInit {
     	//TODO: Implement DB fetching of works
 
     	this.appService.getGalleryWorks()
-            .subscribe((response: Work[]) => {
-                this.fetchedWorks = response;
-            }, (error) => {
-                // TODO: Error
-            })
+    		.subscribe((response: Work[]) => {
+    			this.fetchedWorks = response;
+    		}, (error) => {
+    			// TODO: Error
+    		})
 
     	console.log(this.fetchedWorks);
-    }
-
-    public isOdd(value: number): boolean {
-        return value % 2 === 1;
     }
     
 

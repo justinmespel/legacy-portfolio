@@ -7,12 +7,12 @@
         <p class="m-0">Gallery</p>
     </div>
 
-    <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index">
-        <div class="row" [ngClass]="{'flex-row-reverse': isOdd(wi)}">
+    <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index; let odd = odd">
+        <div class="row" [ngClass]="{'flex-row-reverse': odd}">
             <div class="col-12 col-md-5 "  appFader [fadeSettings]="{show: true, speed: 200}">
                 <h1 class="work-title">{{work.title}}</h1>
     
-                <p class="body-text">{{work.description}}</p>
+                <p class="body-text work-description">{{work.description}}</p>
 
 
                 <div class="mt-5" *ngIf="work?.tools?.length">
