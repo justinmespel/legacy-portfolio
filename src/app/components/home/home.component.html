@@ -1,5 +1,5 @@
 
-<div class="page" >
+<div class="page row">
 
     <div class="col-12 col-md-6 home-container" appFader [fadeSettings]="{show: true, speed: 300}">
         <p class="hero-text mt-auto">
@@ -9,16 +9,19 @@
             Mespel
         </p>
 
-        <p class="sub-text mt-4 mb-1">
-            Web / App Developer
+        <p class="sub-text mt-2 mb-4">
+            App Developer / Web Developer / UI Designer
         </p>
-        <p class="sub-text mb-auto">
-            Graphic Designer
-        </p>
+
+        <div class="mb-auto">
+            <button class="gallery-button" routerLink="/gallery">
+                Gallery
+            </button>
+        </div>
     </div>
 
     <div class="col-12 col-md-6">
-        
+        <ng-lottie [options]="lottieLogoOptions" containerClass="home-lottie" width="75%"></ng-lottie>
     </div>
     
 </div>

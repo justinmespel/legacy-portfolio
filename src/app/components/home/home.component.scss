@@ -2,10 +2,11 @@
 
 .page {
     background-color: $color-grey-dark;
+    overflow: hidden;
 }
 
 .home-container {
-    padding-top: 5rem;
+    padding-top: 4rem;
 }
 
 .hero-text {
@@ -17,11 +18,23 @@
 }
 
 .sub-text {
-    color: $color-white-dark;
+    color: $color-grey-light;
+    @extend .font-09;
 }
 
 .hero-text .sub-text {
     width: 100%;
+}
+
+.gallery-button {
+    @extend .btn-destyle;
+    border-radius: 3px;
+    border: 1px solid $color-teal;
+    padding: 0.7rem 1rem;
+    color: $color-teal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 @media (min-width: #{$size-md}) {

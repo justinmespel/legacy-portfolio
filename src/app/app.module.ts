@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { LottieModule } from 'ngx-lottie';
+import player from 'lottie-web';
 
 /* Components */
 import { AppComponent } from './app.component';
@@ -16,25 +17,29 @@ import { ContactComponent } from './components/contact/contact.component';
 /* Directves */
 import { FadeInOutDirective } from './directives/fade.directive';
 
-/* Services */
+
+export function playerFactory() {
+	return player;
+}
 
 @NgModule({
 	declarations: [
+		/* Components */
 		AppComponent,
 		HomeComponent,
 		NavBarComponent,
 		GalleryComponent,
 		AboutComponent,
 		ContactComponent,
-
+		/* Directves */
 		FadeInOutDirective
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
 		NgbModule,
-		BrowserAnimationsModule
-        
+		BrowserAnimationsModule,
+		LottieModule.forRoot({ player: playerFactory }),
 	],
 	providers: [],
 	bootstrap: [AppComponent]

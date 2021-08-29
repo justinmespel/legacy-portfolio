@@ -49,3 +49,20 @@
     }
 }
 
+.home-lottie {
+    margin-left: auto;
+    animation: floatLottie 3s ease-in-out infinite;
+}
+
+
+@keyframes floatLottie {
+	0% {
+		transform: translatey(0px) rotate(-18deg);
+	}
+	50% {
+		transform: translatey(-20px) rotate(-18deg);
+	}
+	100% {
+		transform: translatey(0px) rotate(-18deg);
+	}
+}
