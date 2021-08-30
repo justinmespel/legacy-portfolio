@@ -49,10 +49,25 @@
     }
 }
 
+a:hover, a:focus {
+    color: $color-red;
+}
+
 .home-lottie {
     margin-left: auto;
     animation: floatLottie 3s ease-in-out infinite;
     padding-top: 15%;
+}
+
+
+/* Buttons */
+.btn-destyle {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: none;
+    color: auto;
+    background-color: transparent;
 }
 
 

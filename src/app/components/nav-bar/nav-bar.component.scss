@@ -1,4 +1,4 @@
-@import '~/src/styles/styles.scss';
+@import '~/src/styles/layout.scss';
 @import '~/src/styles/variables.scss';
 
 .nav-bar {
@@ -29,6 +29,12 @@
 .icon-red:hover {
     filter: $color-svg-red;
     transform: scale(1.2);
+}
+
+.logo {
+    img {
+        width: 33px;
+    }
 }
 
 

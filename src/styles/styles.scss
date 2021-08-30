@@ -13,21 +13,6 @@ body {
     overflow: hidden;
 }
 
-
-a:hover, a:focus {
-    color: $color-red;
-}
-
-/* Buttons */
-.btn-destyle {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    outline: none;
-    color: auto;
-    background-color: transparent;
-}
-
 /* Colors */
 .color-grey-light {
     color: $color-grey-light;
@@ -72,4 +57,9 @@ a:hover, a:focus {
 }
 .font-weight-600 {
     font-weight: 600;
+}
+
+/* Visiblity */
+.hidden {
+    visibility: hidden;
 }
