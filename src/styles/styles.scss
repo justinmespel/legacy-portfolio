@@ -8,6 +8,9 @@ body {
     font-family: $font-work-sans;
     line-height: 1;
     background-color: $color-grey-dark;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
 }
 
 

@@ -25,7 +25,7 @@
 
 .page-heading {
     padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     margin-left: -1rem; // Clear container padding
     display: flex;
     align-items: center;
@@ -52,6 +52,7 @@
 .home-lottie {
     margin-left: auto;
     animation: floatLottie 3s ease-in-out infinite;
+    padding-top: 15%;
 }
 
 
