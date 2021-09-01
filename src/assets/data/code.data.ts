@@ -2,7 +2,7 @@ import { Work, WorkLink } from '../../app/models';
 import { WorkImage } from '../../app/models';
 import { WorkTool } from '../../app/models';
 
-export const Data: Work[] =  [
+export const CodeData: Work[] =  [
 	new Work({
 		title: 'Hell Ordering',
 		description: 'Bringing a fresh design to life! I was the lead developer working on Hell Pizza’s new ordering website. This platform is used by Hell customers all over New Zealand so performance and design was of the utmost importance.\n\nThe objective was create a new modern web application for their most customer facing website. This involved refreshing their existing web features and implementing new ones. I went for a OOP approach using Angular 10 as this fit the clients preferred structure. Check out my design page to see how this project started.',

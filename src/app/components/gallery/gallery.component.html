@@ -2,9 +2,9 @@
 
 <div class="page" >
 
-    <div class="page-heading" appFader [fadeSettings]="{show: true, speed: 200}">
+    <div class="page-heading">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">Gallery</p>
+        <p class="m-0">{{isCodeView() ? 'Coding' : 'Design'}}</p>
     </div>
 
     <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index; let odd = odd">

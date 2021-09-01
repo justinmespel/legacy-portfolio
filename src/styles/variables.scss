@@ -13,11 +13,14 @@ $color-white: #ececec;
 $color-white-dark: #cecece;
 
 $color-red: #ff1c55;
-
 $color-teal: #03c2c2;
+$color-purple: #8e44ad;
+
+$color-rgb-teal: rgb(42, 233, 207);
+$color-rgb-purple: rgba(142, 68, 173, 1);
 
 $color-svg-teal: invert(91%) sepia(90%) saturate(5325%) hue-rotate(150deg) brightness(155%) contrast(92%);
-$color-svg-red: invert(50%) sepia(112%) saturate(5207%) hue-rotate(334deg) brightness(134%) contrast(146%);
+$color-svg-purple: invert(49%) sepia(82%) saturate(6265%) hue-rotate(267deg) brightness(106%) contrast(82%);
 
 /* Sizing */
 $size-sm: 576px;

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { AnimationOptions } from 'ngx-lottie';
 
 @Component({
@@ -10,7 +11,12 @@ export class HomeComponent implements OnInit {
 
 	public lottieLogoOptions!: AnimationOptions;
 
-	constructor() { }
+	constructor(
+		private router: Router
+	) { 
+		console.log(this.router.url);
+
+	}
 
 	ngOnInit(): void {
 		this.lottieLogoOptions = {

@@ -4,7 +4,8 @@ import { Work } from '../models/work.model';
 import { RequestsService } from './requests.service';
 
 //TODO: Implement DB fetching of works
-import { Data } from '../../assets/data/work.data';
+import { CodeData } from '../../assets/data/code.data';
+import { DesignData } from '../../assets/data/design.data';
 
 @Injectable({
 	providedIn: 'root'
@@ -16,9 +17,16 @@ export class AppService {
 	) {
 	}
  
-    public getGalleryWorks(): Observable<Work[]>  {
+	public getCodeGalleryData(): Observable<Work[]> 
+	{
     	//TODO: Implement DB fetching of works
-        return of(Data)
-    }
+		return of(CodeData);
+	}
+
+	public getDesignGalleryData(): Observable<Work[]>
+	{
+		//TODO: Implement DB fetching of works
+		return of(DesignData);
+	}
 
 }

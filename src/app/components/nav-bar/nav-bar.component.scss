@@ -22,13 +22,15 @@
     }
 }
 
-.icon-teal:hover {
-    filter: $color-svg-teal;
+.nav-icon:hover {
     transform: scale(1.2);
 }
-.icon-red:hover {
-    filter: $color-svg-red;
-    transform: scale(1.2);
+
+.icon-teal {
+    filter:  $color-svg-teal;
+}
+.icon-purple {
+    filter:  $color-svg-purple;
 }
 
 .logo {

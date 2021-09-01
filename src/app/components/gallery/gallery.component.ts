@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { WorkImage } from 'src/app/models/work-image.model';
 import { WorkLink } from 'src/app/models/work-link.model';
 import { WorkTool } from 'src/app/models/work-tool.model';
@@ -12,25 +13,46 @@ import { AppService } from 'src/app/services/app.service';
 })
 export class GalleryComponent implements OnInit {
 
+	private CODE_VIEW = 'Code';
     public fetchedWorks!: Work[];
 
+	public view: string = 'Design';
+
     constructor(
-        private appService: AppService
-    ) { }
+        private appService: AppService,
+		private router: Router
+    ) { 
+	}
 
     ngOnInit(): void {
 
-    	//TODO: Implement DB fetching of works
+		// TODO: Implement DB fetching of works
+		const path = this.router.url.substring(1);
 
-    	this.appService.getGalleryWorks()
+		if (path === 'code') {
+
+			this.view = this.CODE_VIEW;
+
+			this.appService.getCodeGalleryData()
     		.subscribe((response: Work[]) => {
     			this.fetchedWorks = response;
     		}, (error) => {
     			// TODO: Error
     		})
+		} else {
 
-    	console.log(this.fetchedWorks);
+			this.appService.getDesignGalleryData()
+			.subscribe((response: Work[]) => {
+				this.fetchedWorks = response;
+			}, (error) => {
+				// TODO: Error
+			})
+		}
     }
+
+	public isCodeView(): boolean {
+		return this.view === this.CODE_VIEW;
+	}
     
 
 }

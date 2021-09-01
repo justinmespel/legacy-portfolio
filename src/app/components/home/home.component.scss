@@ -3,15 +3,11 @@
 
 
 .page {
+    background: $color-rgb-teal;
 
-    $right: rgba(142, 68, 173, 1);
-    $left: rgb(42, 233, 207);
-
-    background: $green;
-
-	background: -moz-linear-gradient(-45deg, $left -10%, $right 90%);
-	background: -webkit-linear-gradient(-45deg, $left -10%, $right 90%);
-	background: linear-gradient(135deg, $left -10%, $right 90%);
+	background: -moz-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
+	background: -webkit-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
+	background: linear-gradient(135deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
     overflow: hidden;
 }
 
@@ -24,7 +20,7 @@
     font-weight: 500;
     text-transform: uppercase;
     margin: 0;
-    color: $color-grey-dark
+    color: $color-grey-dark;
 }
 
 .sub-text {
