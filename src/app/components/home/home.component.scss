@@ -1,8 +1,17 @@
 @import '~/src/styles/styles.scss';
 @import '~/src/styles/layout.scss';
 
+
 .page {
-    background-color: $color-grey-dark;
+
+    $right: rgba(142, 68, 173, 1);
+    $left: rgb(42, 233, 207);
+
+    background: $green;
+
+	background: -moz-linear-gradient(-45deg, $left -10%, $right 90%);
+	background: -webkit-linear-gradient(-45deg, $left -10%, $right 90%);
+	background: linear-gradient(135deg, $left -10%, $right 90%);
     overflow: hidden;
 }
 
@@ -15,11 +24,11 @@
     font-weight: 500;
     text-transform: uppercase;
     margin: 0;
-    color: $color-white;
+    color: $color-grey-dark
 }
 
 .sub-text {
-    color: $color-grey-light;
+    color: $color-grey;
     @extend .font-09;
 }
 
@@ -30,9 +39,9 @@
 .gallery-button {
     @extend .btn-destyle;
     border-radius: 3px;
-    border: 1px solid $color-teal;
+    border: 2px solid $color-grey-dark;
     padding: 0.7rem 1rem;
-    color: $color-teal;
+    color: $color-grey-dark;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 500;
@@ -58,6 +67,9 @@
         font-size: 1.2rem;
     }
 
+    .gallery-button {
+        margin-top: 2rem;
+    }
 
 }
 
