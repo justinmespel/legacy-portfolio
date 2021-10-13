@@ -12,7 +12,7 @@ jobs:
       AWS_S3_BUCKET_NAME: jmespel.com
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [14.15]
     steps:
       - uses: actions/checkout@master
 
