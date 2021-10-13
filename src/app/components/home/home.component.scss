@@ -1,4 +1,3 @@
-@import '~/src/styles/styles.scss';
 @import '~/src/styles/layout.scss';
 
 
@@ -25,7 +24,7 @@
 
 .sub-text {
     color: $color-grey;
-    @extend .font-09;
+    font-size: 0.9rem;
 }
 
 .hero-text .sub-text {
