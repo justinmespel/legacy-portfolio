@@ -11,7 +11,7 @@ const routes: Routes = [
 		path: '', component: HomeComponent
 	},
 	{
-		path: 'code', component: GalleryComponent
+		path: 'develop', component: GalleryComponent
 	},
 	{
 		path: 'design', component: GalleryComponent

@@ -13,7 +13,7 @@ import { AppService } from 'src/app/services/app.service';
 })
 export class GalleryComponent implements OnInit {
 
-	private CODE_VIEW = 'Code';
+	private CODE_VIEW = 'develop';
     public fetchedWorks!: Work[];
 
 	public view: string = 'Design';
@@ -27,12 +27,9 @@ export class GalleryComponent implements OnInit {
     ngOnInit(): void {
 
 		// TODO: Implement DB fetching of works
-		const path = this.router.url.substring(1);
+		this.view = this.router.url.substring(1);
 
-		if (path === 'code') {
-
-			this.view = this.CODE_VIEW;
-
+		if (this.view === this.CODE_VIEW) {
 			this.appService.getCodeGalleryData()
     		.subscribe((response: Work[]) => {
     			this.fetchedWorks = response;
@@ -48,6 +45,8 @@ export class GalleryComponent implements OnInit {
 				// TODO: Error
 			})
 		}
+
+		
     }
 
 	public isCodeView(): boolean {

@@ -28,14 +28,13 @@ export const CodeData: Work[] =  [
 		],
 		images: [
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/develop/ordering-1.png',
 			}),
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/develop/ordering-3.png',
+			}),
+			new WorkImage({
+				src: 'assets/gallery/develop/ordering-2.png',
 			}),
 		],
 		links: [
@@ -64,15 +63,8 @@ export const CodeData: Work[] =  [
 		],
 		images: [
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/develop/uber.png',
 			}),
-			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
-			})
 		]
 	}),
 	new Work({
@@ -94,14 +86,50 @@ export const CodeData: Work[] =  [
 		],
 		images: [
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/develop/drive-1.png',
 			}),
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/develop/drive-2.png',
+			}),
+			new WorkImage({
+				src: 'assets/gallery/develop/drive-3.png',
+			}),
+		]
+	}),
+	new Work({
+		title: 'Training Portal',
+		description: 'A web application utilising the clients existing intranet, built on AngularJS. \n\n A mobile first approach was taken to capture the majority of their target audience. Mixing beautiful design with easy functionality allowed me to create an engaging platform for both the content creator and trainees.',
+		tools: [
+			new WorkTool({ 
+				name: 'AngularJS' 
+			}),
+			new WorkTool({ 
+				name: 'PHP' 
+			}),
+		],
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/develop/training-1.png',
+			}),
+		]
+	}),
+	new Work({
+		title: 'Roster',
+		description: 'Created a in-house roster used by each store to create their weekly employee shifts. The roster tied in other features such as leave requests and upcoming special events to help the user create a balanced work flow for every day.',
+		tools: [
+			new WorkTool({ 
+				name: 'AngularJS' 
+			}),
+			new WorkTool({ 
+				name: 'MySQL' 
+			}),
+		],
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/develop/roster-1.png',
+			}),
+			new WorkImage({
+				src: 'assets/gallery/develop/roster-2.png',
 			}),
 		]
 	}),

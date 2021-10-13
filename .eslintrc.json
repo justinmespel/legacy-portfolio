@@ -19,7 +19,6 @@
         "plugin:@angular-eslint/template/process-inline-templates"
       ],
       "rules": {
-        "indent": ["error", "tab"],
         "@angular-eslint/directive-selector": [
           "error",
           {
