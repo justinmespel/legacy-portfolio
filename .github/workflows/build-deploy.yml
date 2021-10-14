@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - name: install Node.js
+      - name: install node.js
         uses: actions/setup-node@v1
         with:
           node-version: 14.15
