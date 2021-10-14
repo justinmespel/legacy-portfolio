@@ -1,5 +1,11 @@
 name: S3 Build And Deploy
 
+on: 
+  workflow_dispatch:
+    inputs: 
+      s3_arguments:
+        description: 'Optional --params for s3 deploy'
+
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
@@ -22,7 +28,7 @@ jobs:
       - uses: jakejarvis/s3-sync-action@master
         name: s3 deploy
         with:
-          args: --follow-symlinks --delete
+          args: --follow-symlinks --delete ${{ github.event.input.s3_arguments }}
         env:
           AWS_S3_BUCKET: ${{ env.AWS_S3_BUCKET_NAME }}
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
