@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title, Meta } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+
+/* Animations */
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
@@ -41,7 +43,10 @@ export function playerFactory() {
 		BrowserAnimationsModule,
 		LottieModule.forRoot({ player: playerFactory }),
 	],
-	providers: [],
+	providers: [
+		Meta,
+		Title
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

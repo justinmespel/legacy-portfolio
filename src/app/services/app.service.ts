@@ -13,7 +13,7 @@ import { DesignData } from '../../assets/data/design.data';
 export class AppService {
 
 	constructor(
-        private requestsService: RequestsService
+        private requestsService: RequestsService,
 	) {
 	}
  

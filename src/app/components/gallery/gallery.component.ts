@@ -5,6 +5,7 @@ import { WorkLink } from 'src/app/models/work-link.model';
 import { WorkTool } from 'src/app/models/work-tool.model';
 import { Work } from 'src/app/models/work.model';
 import { AppService } from 'src/app/services/app.service';
+import { MetaService } from 'src/app/services/meta.service';
 
 @Component({
 	selector: 'app-gallery',
@@ -19,8 +20,9 @@ export class GalleryComponent implements OnInit {
 	public view: string = 'Design';
 
     constructor(
+		private router: Router,
         private appService: AppService,
-		private router: Router
+		private metaService: MetaService
     ) { 
 	}
 
@@ -30,6 +32,9 @@ export class GalleryComponent implements OnInit {
 		this.view = this.router.url.substring(1);
 
 		if (this.view === this.CODE_VIEW) {
+
+			this.metaService.updateTitle("Develop");
+
 			this.appService.getCodeGalleryData()
     		.subscribe((response: Work[]) => {
     			this.fetchedWorks = response;
@@ -37,6 +42,8 @@ export class GalleryComponent implements OnInit {
     			// TODO: Error
     		})
 		} else {
+
+			this.metaService.updateTitle("Design");
 
 			this.appService.getDesignGalleryData()
 			.subscribe((response: Work[]) => {
