@@ -1,34 +1,26 @@
-name: S3 Deploy
-
-on:
-  push:
-    branches:
-      - master
+name: S3 Build And Deploy
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
     env:
       AWS_S3_BUCKET_NAME: jmespel.com
-    strategy:
-      matrix:
-        node-version: [14.15]
     steps:
       - uses: actions/checkout@master
 
-      - name: Node.js ${{ matrix.node-version }}
+      - name: install Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: 14.15
 
-      - name: Install Dependencies
+      - name: npm install
         run: npm install
 
-      - name: Build
+      - name: ng build
         run: npm run build
 
       - uses: jakejarvis/s3-sync-action@master
-        name: Deploy
+        name: s3 deploy
         with:
           args: --follow-symlinks --delete
         env:
