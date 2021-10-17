@@ -59,6 +59,15 @@ a:hover, a:focus {
     padding-top: 15%;
 }
 
+/* Colors */
+.teal-purple-gradient-bg {
+    background: $color-rgb-teal;
+
+	background: -moz-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 80%);
+	background: -webkit-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 80%);
+	background: linear-gradient(135deg, $color-rgb-teal -10%, $color-rgb-purple 80%);
+}
+
 
 /* Buttons */
 .btn-destyle {
@@ -69,6 +78,33 @@ a:hover, a:focus {
     color: auto;
     background-color: transparent;
 }
+.btn-destyle:focus {
+    box-shadow: none;
+}
+.btn-destyle:not(:disabled):not(.disabled):active {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.btn-primary {
+    @extend .btn-destyle;
+    border-radius: 3px;
+    border: 2px solid $color-grey-dark;
+    padding: 0.7rem 1rem;
+    color: $color-grey-dark;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.btn-primary:not(:disabled):not(.disabled):active {
+    color: $color-grey-dark;
+    border: 2px solid $color-grey-dark;
+}
+
+
+
+
+
 
 
 @keyframes floatLottie {

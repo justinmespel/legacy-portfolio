@@ -18,6 +18,7 @@ import { ContactComponent } from './components/contact/contact.component';
 
 /* Directves */
 import { FadeInOutDirective } from './directives/fade.directive';
+import { WipComponent } from './components/wip/wip.component';
 
 
 export function playerFactory() {
@@ -33,6 +34,7 @@ export function playerFactory() {
 		GalleryComponent,
 		AboutComponent,
 		ContactComponent,
+		WipComponent,
 		/* Directves */
 		FadeInOutDirective
 	],

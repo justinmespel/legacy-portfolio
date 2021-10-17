@@ -2,11 +2,7 @@
 
 
 .page {
-    background: $color-rgb-teal;
-
-	background: -moz-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
-	background: -webkit-linear-gradient(-45deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
-	background: linear-gradient(135deg, $color-rgb-teal -10%, $color-rgb-purple 90%);
+    @extend .teal-purple-gradient-bg;
     overflow: hidden;
 }
 
@@ -31,16 +27,6 @@
     width: 100%;
 }
 
-.gallery-button {
-    @extend .btn-destyle;
-    border-radius: 3px;
-    border: 2px solid $color-grey-dark;
-    padding: 0.7rem 1rem;
-    color: $color-grey-dark;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
 
 @media (min-width: #{$size-md}) {
 
