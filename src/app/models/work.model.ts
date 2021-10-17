@@ -18,7 +18,7 @@ export class Work {
         Object.assign(this, data)
 
         if (data.images?.length) {
-            this.tools = [];
+            this.images = [];
             data.images.forEach((img) => this.images.push(new WorkImage(img)));
         }
 
