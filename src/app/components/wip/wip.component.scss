@@ -1,0 +1,19 @@
+@import '~/src/styles/layout.scss';
+
+.page {
+    @extend .teal-purple-gradient-bg;
+    overflow: hidden;
+}
+
+p {
+    font-size: calc(13vw);
+    font-weight: 500;
+}
+
+@media (min-width: #{$size-md}) {
+    
+    p {
+        font-size: 4.5rem;
+    }
+
+}
