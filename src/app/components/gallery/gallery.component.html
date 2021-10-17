@@ -36,13 +36,12 @@
                 </div>
                 
             </div>
-        
-            <div class="col-12 col-md-7">
-                <ngb-carousel [showNavigationIndicators]="false">
+            <div class="col-12 col-md-7" [ngClass]="{'hide-first-arrow': (work.images.length === 1),'hide-last-arrow': (work.images.length === 1)}" >
+                <ngb-carousel #carousel [showNavigationIndicators]="false" [interval]="0">
                     <ng-template ngbSlide *ngFor="let image of work?.images; let i = index">
-                      <div class="slide-img-wrapper">
-                        <img [src]="image.src" alt="{{'Gallery image #' + (i + 1)}}">
-                      </div>
+                        <div class="slide-img-wrapper">
+                            <img [src]="image.src">
+                        </div>
                     </ng-template>
                 </ngb-carousel>
             </div>
