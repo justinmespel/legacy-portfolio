@@ -1,5 +1,29 @@
-<div class="nav-bar-wrapper">
+<div class="nav-bar-wrapper d-none d-md-block">
     <app-nav-bar class="d-flex w-100 h-100"></app-nav-bar>
+</div>
+
+<div class="mobile-header d-md-none" (click)="toggleMobileMenu()">
+
+    <img [ngClass]="{'is-active' : showMobileMenu}" src="assets/icons/j-logo.svg" alt="home-button-icon">
+
+    <i class="fas fa-bars burger-menu-bars" [ngClass]="{'is-hidden' : showMobileMenu}" ></i>     
+  
+    <i class="fas fa-times burger-menu-times" [ngClass]="{'is-active' : showMobileMenu}"></i>
+</div>
+
+<div class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
+    <p><span (click)="toggleMobileMenu()" routerLink="/home">
+        Home
+    </span></p>
+    <p><span (click)="toggleMobileMenu()" routerLink="/develop">
+        Code
+    </span></p>
+    <p><span (click)="toggleMobileMenu()" routerLink="/design">
+        Design
+    </span></p>
+    <p><span (click)="toggleMobileMenu()" routerLink="/about">
+        About
+    </span></p>  
 </div>
 
 <div class="router-container">

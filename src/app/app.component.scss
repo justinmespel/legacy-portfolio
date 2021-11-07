@@ -11,11 +11,126 @@
 }
 
 .router-container {
-    margin-bottom: $nav-bar-mobile-height;
+    // margin-bottom: $nav-bar-mobile-height;
     width: 100vw;
-    height: calc(100vh - #{$nav-bar-mobile-height});
+    height: 100vh;
     overflow: hidden;
 }
+
+
+/* Mobile Top Bar */
+.mobile-header {
+    z-index: 101;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: $nav-bar-mobile-height;
+
+    img {
+        height: 2rem;
+        position: absolute;
+        top: 0.9rem;
+        left: 1.2rem;
+        transform: scale(0); 
+        transition: transform 0.5s ease;
+        &.is-active {
+            transform: scale(1);
+        }   
+    }
+
+
+    .burger-menu-times {
+        color: $color-teal;
+        transform: scale(0); 
+        cursor: pointer;
+        &.is-active {
+            transform: scale(1);
+        }   
+    }
+
+    .burger-menu-bars, .burger-menu-times {
+        position: absolute;
+        top: 0.9rem;
+        right: 1.2rem;
+        transition: transform 0.5s ease;
+        font-size: 2rem;
+    }
+
+    .is-hidden {
+        transform: scale(0);
+    }
+
+}
+
+/* Mobile Nav */
+.mobile-nav {
+    z-index: 100;
+    background: $color-grey-dark;
+    color: $color-white-dark;
+    font-family: $font-roboto;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-weight: 400;
+
+    top: 0px;
+    transition: transform 0.5s ease;
+    transform: translate(0%, -100%);
+    // padding: 20% 0;
+
+    &.is-active {
+        transform: translate(0%,0%);    
+    }
+
+    p {
+        margin: 0;
+        padding: 1.7rem;
+        font-size: 3rem;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    /* Stike Through */
+    span {
+        position: relative;
+        padding: 10px;
+    }
+    span:before, span:after {
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 3px;
+        top: 50%;
+        margin-top: -0.5px;
+        background: $color-white-dark;
+    }
+      
+    span:before {
+        left: -1.5px;
+    }
+    span:after {
+        right: 1.5px;
+        background: $color-white-dark;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    span:hover:before {
+        background: $color-white-dark;
+        width: 100%;
+        transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+    }
+    span:hover:after {
+        background: transparent;
+        width: 100%;
+        transition: 0s;
+    }
+}
+
 
 
 // Usable along side Bootstrap 'md' sizing
