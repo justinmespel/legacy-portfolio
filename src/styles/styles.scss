@@ -4,7 +4,6 @@
 
 /* General */
 body {
-    font-family: $font-work-sans;
     line-height: 1;
     background-color: $color-grey-dark;
     position: fixed;
@@ -12,13 +11,22 @@ body {
     overflow: hidden;
 }
 
+.router-container {
+    font-family: $font-work-sans;
+}
+
 /* Colors */
 .color-grey-light {
     color: $color-grey-light;
 }
-
 .color-grey-darker {
     color: $color-grey-darker;
+}
+.color-teal {
+    color: $color-teal;
+}
+.color-purple {
+    color: $color-purple;
 }
 
 /* Fonts */

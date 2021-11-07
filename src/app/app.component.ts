@@ -5,6 +5,12 @@ import { Component } from '@angular/core';
 	templateUrl: './app.component.html',
 	styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'portfolio';
+export class AppComponent  {
+
+	public showMobileMenu: boolean = false;
+
+	public toggleMobileMenu(): void {
+		this.showMobileMenu = !this.showMobileMenu;
+	}
+	
 }
