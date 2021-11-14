@@ -1,5 +1,5 @@
 
-<div class="page row">
+<div class="page row" [ngStyle]="{'height.px' : screenHeight}">
     <div class="col-12 col-md-6 home-container" appFader [fadeSettings]="{show: true, speed: 300}">
         <p class="hero-text mt-auto">
             Justin
@@ -22,6 +22,4 @@
     <div class="col-12 col-md-6">
         <ng-lottie [options]="lottieLogoOptions" containerClass="home-lottie" width="75%"></ng-lottie>
     </div>
-
-    
 </div>
