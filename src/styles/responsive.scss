@@ -57,3 +57,26 @@
         }
     }
 }
+
+
+@media (min-width: #{$size-xxl}) {
+
+    .page {
+        padding: 1rem 9rem;
+    }
+
+    .page-heading {
+        margin-left: -9rem;
+    }
+}
+
+@media (min-width: #{$size-xxxl}) {
+
+    .page {
+        padding: 1rem 16rem;
+    }
+
+    .page-heading {
+        margin-left: -16rem;
+    }
+}
