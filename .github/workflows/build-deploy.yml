@@ -5,6 +5,9 @@ on:
     inputs: 
       s3_arguments:
         description: 'Optional --params for s3 deploy'
+  push:
+    branches:
+      - master
 
 jobs:
   build-deploy:
