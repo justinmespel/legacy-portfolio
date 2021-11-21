@@ -45,6 +45,29 @@ export const CodeData: Work[] =  [
 		]
 	}),
 	new Work({
+		title: 'Uber Eats Intergration',
+		description: 'Managed full development and communication between Uber Eats and the client to create a seamless platform integration that scales for their increasing number of stores.\n\nI was able to adapt their existing infastructure to send the converted order striaght to their kitchens. Logging has been setup throughout the order\'s build proccess to help monitor the integration health. ',
+		tools: [ 
+			new WorkTool({ 
+				name: 'PHP'
+			}),
+			new WorkTool({
+				name: 'MySql'
+			}),
+			new WorkTool({ 
+				name: 'Angular JS' 
+			}),
+			new WorkTool({ 
+				name: 'Phinx' 
+			})
+		],
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/develop/uber.png',
+			}),
+		]
+	}),
+	new Work({
 		title: 'Driver App',
 		description: 'Developed Hell’s in-house driver performance Android app - Styx Drive. This was developed using the Nativescript and Angular 8 framework. \n\n The app communicates with the Hell API to complete various internal tasks. It features QR authentication and implements a custom Java background service.',
 		tools: [
@@ -84,29 +107,6 @@ export const CodeData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/training-1.png',
-			}),
-		]
-	}),
-	new Work({
-		title: 'Uber Intergration',
-		description: 'Managed full development and communication between Uber Eats and Hell to create a seamless platform integration that scales for their increasing number of stores.\n\nI was able to adapt Hell\'s existing infastructure to send the order striaght to their kitchens. Logging is setup throughout the order\'s build proccess to help monitor the integration health. ',
-		tools: [ 
-			new WorkTool({ 
-				name: 'PHP'
-			}),
-			new WorkTool({
-				name: 'MySql'
-			}),
-			new WorkTool({ 
-				name: 'Angular JS' 
-			}),
-			new WorkTool({ 
-				name: 'Phinx' 
-			})
-		],
-		images: [
-			new WorkImage({
-				src: 'assets/gallery/develop/uber.png',
 			}),
 		]
 	}),

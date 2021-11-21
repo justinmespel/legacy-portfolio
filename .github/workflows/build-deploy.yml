@@ -1,4 +1,4 @@
-name: S3 Build And Deploy
+name: S3 Build And Deploy (Legacy)
 
 on: 
   workflow_dispatch:

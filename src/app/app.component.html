@@ -4,26 +4,17 @@
 
 <div class="mobile-header d-md-none" (click)="toggleMobileMenu()">
 
-    <img [ngClass]="{'is-active' : showMobileMenu}" src="assets/icons/j-logo.svg" alt="home-button-icon">
+    <img [ngClass]="{'is-active' : showMobileMenu}" class="logo" src="assets/icons/j-logo.svg" alt="home-button-icon">
 
-    <i class="fas fa-bars burger-menu-bars" [ngClass]="{'is-hidden' : showMobileMenu}" ></i>     
+    <img [ngClass]="{'is-hidden' : showMobileMenu}" class="burger-menu-bars" src="assets/icons/hamburger.svg" alt="open-menu-icon" >
   
-    <i class="fas fa-times burger-menu-times" [ngClass]="{'is-active' : showMobileMenu}"></i>
+    <img [ngClass]="{'is-active' : showMobileMenu}" class="burger-menu-times" src="assets/icons/times.svg" alt="close-menu-icon" >
 </div>
 
 <div class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
-    <p><span (click)="toggleMobileMenu()" routerLink="/home">
-        Home
+    <p *ngFor="let section of mobileMenu"><span (click)="toggleMobileMenu()" [routerLink]="section.route">
+        {{section.name}}
     </span></p>
-    <p><span (click)="toggleMobileMenu()" routerLink="/develop">
-        Code
-    </span></p>
-    <p><span (click)="toggleMobileMenu()" routerLink="/design">
-        Design
-    </span></p>
-    <p><span (click)="toggleMobileMenu()" routerLink="/about">
-        About
-    </span></p>  
 </div>
 
 <div class="router-container">
