@@ -1,13 +1,10 @@
-name: S3 Build And Deploy
+name: S3 Build And Deploy (Legacy)
 
 on: 
   workflow_dispatch:
     inputs: 
       s3_arguments:
         description: 'Optional --params for s3 deploy'
-  push:
-    branches:
-      - master
 
 jobs:
   build-deploy:
