@@ -18,7 +18,7 @@ const routes: Routes = [
 		path: 'design', component: WipComponent
 	},
 	{
-		path: 'about', component: WipComponent
+		path: 'about', component: AboutComponent
 	},
 	{
 		path: '**', redirectTo: '/'

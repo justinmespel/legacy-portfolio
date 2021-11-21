@@ -25,7 +25,6 @@ export class HomeComponent implements OnInit {
 	@HostListener('window:resize', ['$event'])
 	onResize(event: any) {
 		this.screenHeight = window.innerHeight;
-		console.log(this.screenHeight);
 	}
 
 	ngOnInit(): void {

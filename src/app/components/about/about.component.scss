@@ -26,6 +26,7 @@
 @media (min-width: #{$size-md}) {
     .passions .body-text {
         margin-top: 2rem;
+        text-align: center;
     }
 
     .passion {
@@ -35,6 +36,8 @@
 
 // Usable along side Bootstrap 'lg' sizing
 @media (min-width: #{$size-lg}) {
+    
 
 
 }
+
