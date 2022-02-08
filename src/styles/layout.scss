@@ -49,6 +49,13 @@
     }
 }
 
+.page-divider{
+    width: 20vw;
+    background-color: $color-white-dark;
+    height: 1px;
+    margin: 4rem auto;
+}
+
 a:hover, a:focus {
     color: $color-red;
 }

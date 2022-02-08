@@ -8,20 +8,24 @@
     </div>
 
     <div class="about-content row mt-3"  appFader [fadeSettings]="{show: true, speed: 300}">
-        <div class="col-md-4 col-lg-6">
+        <div class="col-sm-12 col-md-6">
 
         </div>
-        <div class="col-12 col-md-8 col-lg-6">
-            <p class="font-10 text-uppercase font-weight-600">Justin Van Der Mespel</p>
-            <p class="body-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-            </p>
-            <p class="body-text">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
 
-            <div class="profile-image-container">
-                <img src="assets/temp/gallery-image.png" alt="">
+        <div class="col-sm-8 col-md-6">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-12 p-0">
+                <p class="font-12 text-uppercase font-weight-600">Justin Van Der Mespel</p>
+                <p class="body-text">
+                    Hey there! I'm Justin, A software developer currently based in New Zealand. 
+                </p>
+                <p class="body-text">
+                    My aim is to help grow your business by creating personalized, digital assets for your brand. Opertunities are going to be unique to you, and I'm here to help you capture them in this ever growing digial landscape.
+                </p>
+            </div>
+            <div class="col-11 col-sm-12 col-md-10 col-lg-8 p-0">
+                <div class="profile-image-container">
+                    <img src="assets/about/headshot.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
@@ -29,59 +33,88 @@
 
     <div class="page-heading pt-5 mt-3" appFader [fadeSettings]="{show: true, speed: 200}">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">Passions</p>
+        <p class="m-0">What I Do</p>
 
     </div>
 
     <div class="passions row mt-4 mb-5"  appFader [fadeSettings]="{show: true, speed: 300}">
+
         <div class="passion col-12 col-md-4">
             <div class="row">
-                <div class="col-4 col-md-12 d-flex  align-items-center">
-                    <div class="profile-image-container mt-0">
-                        <img src="assets/temp/gallery-image.png" alt="">
+                <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
+                    <div class="passion-animation  mt-0">
+                        <ng-lottie [options]="codeAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
-                <div class="col-8 col-md-12">
+                <div class="col-12 col-md-12">
                     <p class="body-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        User-facing websites, Mobile applications, to full scale web applications - software development is one of my full-time passions. Improving existing software can be an easy way to increase engagement with your target audience.
                     </p>
                 </div>
             </div>
         </div>
         <div class="passion col-12 col-md-4">
             <div class="row">
-                <div class="col-4 col-md-12 d-flex  align-items-center">
-                    <div class="profile-image-container mt-0">
-                        <img src="assets/temp/gallery-image.png" alt="">
+                <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
+                    <div class="passion-animation mt-0">
+                        <ng-lottie [options]="itAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
-                <div class="col-8 col-md-12">
+                <div class="col-12 col-md-12">
                     <p class="body-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        Technology is the key that allows me to find innovative ways to create solutions for you. Using a variety of technology can help create a range of solutions throughout your company.
                     </p>
                 </div>
             </div>
         </div>
+
         <div class="passion col-12 col-md-4">
             <div class="row">
-                <div class="col-4 col-md-12 d-flex  align-items-center">
-                    <div class="profile-image-container mt-0">
-                        <img src="assets/temp/gallery-image.png" alt="">
+                <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
+                    <div class="passion-animation  mt-0">
+                        <ng-lottie [options]="designAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
-                <div class="col-8 col-md-12">
+                <div class="col-12 col-md-12">
                     <p class="body-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                    </p>
+                        Digital design is bringing your brand to life on your audience's screen. I specialize in UI design, the direct interface your users will engage with. Finding the balance between beautiful and functional is a challenge I enjoy.                    </p>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- <div class="page-heading pt-5 pb-5 mt-3" appFader [fadeSettings]="{show: true, speed: 200}">
+
+
+    <div class="page-heading pt-5 mt-3" appFader [fadeSettings]="{show: true, speed: 200}">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">Skills</p>
-    </div> -->
+        <p class="m-0">Let's Talk</p>
+    </div>
+
+    <div class="about-content row mt-3"  appFader [fadeSettings]="{show: true, speed: 300}">
+        <div class="col-sm-12 col-md-6">
+
+        </div>
+
+        <div class="col-sm-8 col-md-6">
+            <div class="col-12 col-sm-12 col-md-10 col-lg-12 p-0">
+                <p class="font-12 text-uppercase font-weight-600">How to Reach Me</p>
+                <p class="body-text">
+                    Got an idea you want brought to life? Maybe you just want to figure out your options. I'm happy to provide consultations and recommendations upon request.
+                </p>
+                <p class="body-text">
+                    You can contact me at <a href="mailto:info@jmespel.com" class="font-weight-600 color-grey-light">info@jmespel.com</a> and I will get back to you ASAP!
+                </p>
+            </div>
+            <div class="col-11 col-sm-12 col-md-10 col-lg-8 p-0 flex-grow-1 justify-content-center">
+                <ng-lottie [options]="contactAnimationOptions" containerClass=""></ng-lottie>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-flex">
+        <hr class="page-divider" />
+    </div>
+
 
 
 

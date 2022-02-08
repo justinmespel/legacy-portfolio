@@ -5,7 +5,7 @@ import { WorkTool } from '../../app/models';
 export const CodeData: Work[] =  [
 	new Work({
 		title: 'Hell Ordering',
-		description: 'Bringing a fresh design to life! It was a blast working on Hell Pizza’s new ordering website. \n\nWe created a brand new ordering application for their most customer facing website. This involved refreshing their existing web features and implementing exciting new ones.',
+		description: 'It was an honour to be able to bring an awseome design to life and develop a brand new ordering application for Hell. \n\nThis involved refreshing their existing web features and implementing exciting new ones.',
 		tools: [
 			new WorkTool({ 
 				name: 'Angular 10' 
@@ -39,14 +39,14 @@ export const CodeData: Work[] =  [
 		],
 		links: [
 			new WorkLink({
-				title: 'Coming Soon!',
+				title: 'Order Hell Pizza',
 				src: 'https://online.hellpizza.com'
 			})
 		]
 	}),
 	new Work({
 		title: 'Uber Eats Intergration',
-		description: 'Managed full development and communication between Uber Eats and the client to create a seamless platform integration that scales for their increasing number of stores.\n\nI was able to adapt their existing infastructure to send the converted order striaght to their kitchens. Logging has been setup throughout the order\'s build proccess to help monitor the integration health. ',
+		description: 'Led development between Uber Eats and the client to create a seamless platform integration that scales for their increasing number of stores.\n\nI was able to adapt their existing infastructure to send the converted order striaght to their kitchens. Logging has been setup throughout the order\'s build proccess to help monitor the integration health. ',
 		tools: [ 
 			new WorkTool({ 
 				name: 'PHP'
@@ -69,7 +69,7 @@ export const CodeData: Work[] =  [
 	}),
 	new Work({
 		title: 'Driver App',
-		description: 'Developed Hell’s in-house driver performance Android app - Styx Drive. This was developed using the Nativescript and Angular 8 framework. \n\n The app communicates with the Hell API to complete various internal tasks. It features QR authentication and implements a custom Java background service.',
+		description: 'Developed an in-house driver app for Android - Styx Drive. This was developed using the Nativescript and Angular 8 framework. \n\n The app communicates with their API to complete various internal tasks. It features QR authentication and implements a custom Java background service.',
 		tools: [
 			new WorkTool({ 
 				name: 'Nativescript' 
@@ -112,7 +112,7 @@ export const CodeData: Work[] =  [
 	}),
 	new Work({
 		title: 'Roster',
-		description: 'A in-house roster used by store\'s to create their weekly workflow. The roster also ties in leave requests and upcoming special events to help the user create a balanced work flow for each day.',
+		description: 'A specialised roster for each businesses\'s for creating their weekly work schedule. The roster ties in leave requests and upcoming special events to help the user create a balanced work flow for each day.',
 		tools: [
 			new WorkTool({ 
 				name: 'Angular JS' 

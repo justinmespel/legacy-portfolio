@@ -9,6 +9,8 @@
     width: 100%;
     display: flex;
     margin-top: 2rem;
+    -webkit-box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28); 
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28);
     img {
         width: 100%;
         height: 100%;
@@ -17,10 +19,19 @@
 
 .passions .body-text {
     margin: 0;
+    text-align: center;
 }
 
 .passion {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
+}
+
+.passion-animation {
+    @extend .profile-image-container;
+    box-shadow: none;
+    max-height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 @media (min-width: #{$size-md}) {
@@ -35,6 +46,8 @@
 
 // Usable along side Bootstrap 'lg' sizing
 @media (min-width: #{$size-lg}) {
-
-
+    .passion {
+        padding: 0 2rem;
+    }
 }
+
