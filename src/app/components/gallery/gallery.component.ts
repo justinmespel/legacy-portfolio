@@ -17,6 +17,7 @@ import { MetaService } from 'src/app/services/meta.service';
 export class GalleryComponent implements OnInit {
 
 	private CODE_VIEW = 'develop';
+	private DESIGN_VIEW = 'design';
     public fetchedWorks!: Work[];
 
 	public view: string = 'Design';
@@ -29,8 +30,8 @@ export class GalleryComponent implements OnInit {
 	}
 
     ngOnInit(): void {
-
-		// TODO: Implement DB fetching of works
+		
+		// Get the current route via the router to determine the view
 		this.view = this.router.url.substring(1);
 
 		if (this.view === this.CODE_VIEW) {
@@ -41,9 +42,9 @@ export class GalleryComponent implements OnInit {
     		.subscribe((response: Work[]) => {
     			this.fetchedWorks = response;
     		}, (error) => {
-    			// TODO: Error
+				// TODO: Error handler service
     		})
-		} else {
+		} else if (this.view === this.DESIGN_VIEW) {
 
 			this.metaService.updateTitle("Design");
 
@@ -51,8 +52,11 @@ export class GalleryComponent implements OnInit {
 			.subscribe((response: Work[]) => {
 				this.fetchedWorks = response;
 			}, (error) => {
-				// TODO: Error
+				// TODO: Error handler service
 			})
+		} else {
+			// Unknown - navigate home
+			this.router.navigate(['']);
 		}
 
 		
