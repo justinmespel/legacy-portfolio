@@ -14,12 +14,9 @@ import { HomeComponent } from './components/home/home.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 
 /* Directves */
 import { FadeInOutDirective } from './directives/fade.directive';
-import { WipComponent } from './components/wip/wip.component';
-
 
 export function playerFactory() {
 	return player;
@@ -33,8 +30,6 @@ export function playerFactory() {
 		NavBarComponent,
 		GalleryComponent,
 		AboutComponent,
-		ContactComponent,
-		WipComponent,
 		/* Directves */
 		FadeInOutDirective
 	],

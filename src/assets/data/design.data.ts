@@ -4,27 +4,42 @@ import { WorkTool } from '../../app/models';
 
 export const DesignData: Work[] =  [
 	new Work({
-		title: 'Example Design',
-		description: 'Bringing a fresh design to life! I was the lead developer working on Hell Pizza’s new ordering website. This platform is used by Hell customers all over New Zealand so performance and design was of the utmost importance.\n\nThe objective was create a new modern web application for their most customer facing website. This involved refreshing their existing web features and implementing new ones. I went for a OOP approach using Angular 10 as this fit the clients preferred structure. Check out my design page to see how this project started.',
-		tools: [
-			new WorkTool({ 
-				name: 'Angular 10' 
-			}),
-			new WorkTool({ 
-				name: 'Adobe Photoshop' 
-			}),
-		],
+		title: 'The Horticulturist',
+		description: 'Brand design for a local horticulture business. \n\nA logo was developed to reflect the company’s wholesome values. This design is used throughout the company’s branding, including business cards and signage.',
 		images: [
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
+				src: 'assets/gallery/design/horticulturlist.png',
+			})
+		]
+	}),
+	new Work({
+		title: 'Ordering platform',
+		description: 'Concept creation to bring Hell’s new ordering platform to life. \n\nThe new design was image-focused, while maintaining thier core brand design. I was able to work with external designers to create a beautiful interface that I was able to bring to life.',
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/design/ui-ordering.png',
+			})
+		]
+	}),
+	new Work({
+		title: 'Posters',
+		description: 'A few posters designs for clients and exhibitions.\n\nCreating a beautiful display of a company\'s values to conveying a clear message. Exhibition posters are bold, and are designed to attract an audience. ',
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/design/posters-1.png',
 			}),
 			new WorkImage({
-				descrpition: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-				src: 'assets/temp/gallery-image.png',
-				link: 'https://github.com'
-			}),
+				src: 'assets/gallery/design/posters-2.png',
+			})
+		]
+	}),
+	new Work({
+		title: 'Application Icons',
+		description: 'Clean and exciting module icons for a training application.\n\nThese were designed to engage a specific target audience, and bring a bit of fun to a process that may seem \“tedious\”.',
+		images: [
+			new WorkImage({
+				src: 'assets/gallery/design/training.png',
+			})
 		]
 	}),
 ]
