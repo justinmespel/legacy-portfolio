@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { HomeComponent } from './components/home/home.component';
-import { WipComponent } from './components/wip/wip.component';
 
 const routes: Routes = [
 	{
@@ -15,7 +13,7 @@ const routes: Routes = [
 		path: 'develop', component: GalleryComponent
 	},
 	{
-		path: 'design', component: WipComponent
+		path: 'design', component: GalleryComponent
 	},
 	{
 		path: 'about', component: AboutComponent

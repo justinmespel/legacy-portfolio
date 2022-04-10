@@ -87,9 +87,6 @@ export const CodeData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/drive-1.png',
-			}),
-			new WorkImage({
-				src: 'assets/gallery/develop/drive-2.png',
 			})
 		]
 	}),
