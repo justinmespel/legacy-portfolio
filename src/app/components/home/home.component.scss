@@ -27,6 +27,9 @@
 .hero-text .sub-text {
     width: 100%;
 }
+.gallery-button:focus {
+    box-shadow: 0 0 0 0.2rem $color-rgb-purple;
+}
 
 
 @media (min-width: #{$size-md}) {
