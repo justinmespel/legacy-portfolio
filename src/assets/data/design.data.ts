@@ -9,6 +9,7 @@ export const DesignData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/design/horticulturlist.png',
+				alt: 'Top-down photo of "The Horticulturist" business card front and back designs'
 			})
 		]
 	}),
@@ -18,6 +19,7 @@ export const DesignData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/design/ui-ordering.png',
+				alt: 'Photo of a tablet containing Hell\'s ordering platform design. The design is their menu displayed on a black background with bone-colored text and product images'
 			})
 		]
 	}),
@@ -27,9 +29,11 @@ export const DesignData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/design/posters-1.png',
+				alt: 'A poster with White text displaying "Summer" with orange flowers mixed through on a light blue background. Displayed in a minimalist dining lounge'
 			}),
 			new WorkImage({
 				src: 'assets/gallery/design/posters-2.png',
+				alt: 'Minimalist yoga poster design with white text and maroon background. Displayed against a white wall on a wooden floor'
 			})
 		]
 	}),
@@ -39,6 +43,7 @@ export const DesignData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/design/training.png',
+				alt: 'Icons illustrated in dark grey on a red background, layed out in a 3 by 3 grid for a training application'
 			})
 		]
 	}),

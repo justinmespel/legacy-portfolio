@@ -1,17 +1,12 @@
-
-
-<div class="page" >
+<main class="page" aria-label="About page content">
 
     <div class="page-heading" appFader [fadeSettings]="{show: true, speed: 200}">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">Who I am</p>
+        <h1 class="m-0">Who I am</h1>
     </div>
 
     <div class="about-content row mt-3"  appFader [fadeSettings]="{show: true, speed: 300}">
-        <div class="col-sm-12 col-md-6">
-
-        </div>
-
+        <div class="col-sm-12 col-md-6"></div>
         <div class="col-sm-8 col-md-6">
             <div class="col-12 col-sm-12 col-md-10 col-lg-12 p-0">
                 <p class="font-12 text-uppercase font-weight-600">Justin Van Der Mespel</p>
@@ -19,12 +14,12 @@
                     Hey there! I'm Justin, A software developer currently based in Melbourne, Australia. 
                 </p>
                 <p class="body-text">
-                    I aim to grow your business by creating personalized, digital assets for your brand. Opertunities are going to be unique to you, and I'm here to help you capture them in this ever growing digial landscape.
+                    I help grow your businesses by creating personalized, digital brand assets. Opertunities are going to be unique to you, and I'm here to help you capture them in this ever growing digial landscape.
                 </p>
             </div>
             <div class="col-11 col-sm-12 col-md-10 col-lg-8 p-0">
                 <div class="profile-image-container">
-                    <img src="assets/about/headshot.jpg" alt="">
+                    <img src="assets/about/headshot-illustration.jpg" alt="Cartoon illustration of website author, Justin, against a sandstone background">
                 </div>
             </div>
         </div>
@@ -33,16 +28,14 @@
 
     <div class="page-heading pt-5 mt-3" appFader [fadeSettings]="{show: true, speed: 200}">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">What I Do</p>
-
+        <h1 class="m-0">What I Do</h1>
     </div>
 
     <div class="passions row mt-4 mb-5"  appFader [fadeSettings]="{show: true, speed: 300}">
-
         <div class="passion col-12 col-md-4">
             <div class="row">
                 <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
-                    <div class="passion-animation  mt-0">
+                    <div class="passion-animation mt-0" role="presentation">
                         <ng-lottie [options]="codeAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
@@ -56,7 +49,7 @@
         <div class="passion col-12 col-md-4">
             <div class="row">
                 <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
-                    <div class="passion-animation mt-0">
+                    <div class="passion-animation mt-0" role="presentation">
                         <ng-lottie [options]="itAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
@@ -67,11 +60,10 @@
                 </div>
             </div>
         </div>
-
         <div class="passion col-12 col-md-4">
             <div class="row">
                 <div class="col-12 col-md-12 d-flex align-items-center justify-content-center">
-                    <div class="passion-animation  mt-0">
+                    <div class="passion-animation  mt-0" role="presentation">
                         <ng-lottie [options]="designAnimationOptions" height="200px"></ng-lottie>
                     </div>
                 </div>
@@ -83,18 +75,13 @@
         </div>
     </div>
 
-
-
     <div class="page-heading pt-5 mt-3" appFader [fadeSettings]="{show: true, speed: 200}">
         <div class="hr-container"><hr /></div>
-        <p class="m-0">Let's Talk</p>
+        <h1 class="m-0">Let's Talk</h1>
     </div>
 
     <div class="about-content row mt-3"  appFader [fadeSettings]="{show: true, speed: 300}">
-        <div class="col-sm-12 col-md-6">
-
-        </div>
-
+        <div class="col-sm-12 col-md-6"></div>
         <div class="col-sm-8 col-md-6">
             <div class="col-12 col-sm-12 col-md-10 col-lg-12 p-0">
                 <p class="font-12 text-uppercase font-weight-600">How to Reach Me</p>
@@ -105,7 +92,7 @@
                     You can contact me at <a href="mailto:info@jmespel.com" class="font-weight-600 color-grey-light">info@jmespel.com</a> and I will be in touch!
                 </p>
             </div>
-            <div class="col-11 col-sm-12 col-md-10 col-lg-8 p-0 flex-grow-1 justify-content-center">
+            <div class="col-11 col-sm-12 col-md-10 col-lg-8 p-0 flex-grow-1 justify-content-center" role="presentation">
                 <ng-lottie [options]="contactAnimationOptions" containerClass=""></ng-lottie>
             </div>
         </div>
@@ -114,8 +101,4 @@
     <div class="d-flex">
         <hr class="page-divider" />
     </div>
-
-
-
-
-</div>
+</main>

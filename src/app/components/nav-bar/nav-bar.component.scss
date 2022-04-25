@@ -25,6 +25,9 @@
 .nav-icon:hover {
     transform: scale(1.2);
 }
+.nav-icon:focus {
+    transform: scale(1.2);
+}
 
 .icon-teal {
     filter:  $color-svg-teal;

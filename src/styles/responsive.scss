@@ -21,8 +21,10 @@
     .page-heading {
         padding-top: 1rem;
         padding-bottom: 3rem;
-        font-size: 1.5rem;
         margin-left: -4rem; // Clear container padding
+        h1 {
+            font-size: 1.5rem;
+        }
         .hr-container {
             width: 4rem;
             margin-right: 1rem;

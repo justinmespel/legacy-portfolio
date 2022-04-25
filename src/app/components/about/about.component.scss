@@ -1,8 +1,11 @@
 @import '~/src/styles/variables';
 
 .page {
-    background-color: $color-white;
     overflow-y: scroll;
+}
+
+.page, .page-heading, .about-content, .passion {
+    background-color: $color-white;
 }
 
 .profile-image-container {

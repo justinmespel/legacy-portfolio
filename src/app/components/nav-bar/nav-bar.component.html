@@ -1,28 +1,28 @@
-
-<div class="nav-bar">
+ 
+<nav class="nav-bar" role="navigation" aria-label="desktop-navigation-bar">
 
     <div class="mb-auto logo pt-4 d-none d-md-block" >
-        <img src="assets/icons/j-logo.svg" alt="home-button-icon" routerLink="/">
+        <img src="assets/icons/j-logo.svg" alt="home-button-logo-icon" routerLink="/" role="button">
     </div>
 
-    <button class="nav-icon" role="button" routerLink="/" routerLinkActive="icon-teal" [routerLinkActiveOptions]="{ exact: true }">
+    <button class="nav-icon" role="button" routerLink="/" routerLinkActive="icon-teal" [routerLinkActiveOptions]="{ exact: true }" aria-label="Navigate to the Home page">
         <img src="assets/icons/home.svg" alt="home-button-icon">
     </button>
 
-    <button class="nav-icon" role="button" routerLink="/develop" routerLinkActive="icon-purple" [routerLinkActiveOptions]="{ exact: true }">
+    <button class="nav-icon" role="button" routerLink="/develop" routerLinkActive="icon-purple" [routerLinkActiveOptions]="{ exact: true }" aria-label="Navigate to the Code gallery">
         <img src="assets/icons/code.svg" alt="gallery-button-icon">
     </button>
 
-    <button class="nav-icon" role="button" routerLink="/design" routerLinkActive="icon-teal" [routerLinkActiveOptions]="{ exact: true }">
+    <button class="nav-icon" role="button" routerLink="/design" routerLinkActive="icon-teal" [routerLinkActiveOptions]="{ exact: true }" aria-label="Navigate to the Design gallery">
         <img src="assets/icons/camera.svg" alt="gallery-button-icon">
     </button>
 
-    <button class="nav-icon" role="button" routerLink="/about" routerLinkActive="icon-purple" [routerLinkActiveOptions]="{ exact: true }">
+    <button class="nav-icon" role="button" routerLink="/about" routerLinkActive="icon-purple" [routerLinkActiveOptions]="{ exact: true }" aria-label="Navigate to the About page">
         <img src="assets/icons/about.svg" alt="about-button-icon">
     </button>
 
     <div class="mt-auto logo pb-4 d-none d-md-block">
-        <img class="hidden" src="assets/icons/j-logo.svg" alt="home-button-icon">
+        <img class="hidden" src="assets/icons/j-logo.svg" alt="home-button-icon-placeholder">
     </div>
 
-</div>
+</nav>

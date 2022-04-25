@@ -2,22 +2,27 @@
     <app-nav-bar class="d-flex w-100 h-100"></app-nav-bar>
 </div>
 
-<div class="mobile-header d-md-none" (click)="toggleMobileMenu()">
+<div class="mobile-header d-md-none">
+    <img [ngClass]="{'is-active' : showMobileMenu}" class="logo" src="assets/icons/j-logo.svg" alt="Green 'J' logo decorative icon">
 
-    <img [ngClass]="{'is-active' : showMobileMenu}" class="logo" src="assets/icons/j-logo.svg" alt="home-button-icon">
-
-    <img [ngClass]="{'is-hidden' : showMobileMenu}" class="burger-menu-bars" src="assets/icons/hamburger.svg" alt="open-menu-icon" >
-  
-    <img [ngClass]="{'is-active' : showMobileMenu}" class="burger-menu-times" src="assets/icons/times.svg" alt="close-menu-icon" >
+    <button class="burger-menu-bars" [ngClass]="{'is-hidden' : showMobileMenu}" (click)="toggleMobileMenu()" role="button" aria-label="Open navigation menu">
+        <img src="assets/icons/hamburger.svg" alt="Open navigation menu hambuger icon" >
+    </button >
+    <button class="burger-menu-times" [ngClass]="{'is-active' : showMobileMenu}" (click)="toggleMobileMenu()" role="button" aria-label="Close navigation menu">
+        <img src="assets/icons/times.svg" alt="Close navigation menu cross icon" >
+    </button >
 </div>
 
-<div class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
-    <p *ngFor="let section of mobileMenu"><span (click)="toggleMobileMenu()" [routerLink]="section.route">
-        {{section.name}}
-    </span></p>
-</div>
+<nav role="navigation" aria-label="mobile-navigation-list">
+    <ul class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
+        <li *ngFor="let section of mobileMenu">
+            <span (click)="toggleMobileMenu()" [routerLink]="section.route">{{section.name}}</span>
+        </li>
+    </ul>
+</nav>
 
 <div class="router-container">
     <router-outlet ></router-outlet>
 </div>
+
 

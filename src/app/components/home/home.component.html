@@ -1,25 +1,26 @@
-
-<div class="page row" [ngStyle]="{'height.px' : screenHeight}">
-    <div class="col-12 col-md-6 home-container" appFader [fadeSettings]="{show: true, speed: 300}">
-        <p class="hero-text mt-auto">
-            Justin
-        </p>
-        <p class="hero-text">
-            MESPEL
-        </p>
-
-        <p class="sub-text mt-2 mb-4">
-            Web Developer / UI Designer / UX Architect
-        </p>
-
-        <div class="mb-auto">
-            <button class="btn-primary" routerLink="/develop">
-                GALLERY
-            </button>
+<main role="main" aria-label="home page main content">
+    <div class="page row" [ngStyle]="{'height.px' : screenHeight}">
+        <div class="col-12 col-md-6 home-container" appFader [fadeSettings]="{show: true, speed: 300}">
+            <h1 class="hero-text mt-auto">
+                Justin
+            </h1>
+            <h1 class="hero-text">
+                MESPEL
+            </h1>
+    
+            <p class="sub-text mt-2 mb-4">
+                Web Developer / UI Designer / UX Architect
+            </p>
+    
+            <div class="mb-auto">
+                <button class="btn-primary gallery-button" routerLink="/develop" role="button" aria-label="Gallery quick navigation button">
+                    GALLERY
+                </button>
+            </div>
+        </div>
+    
+        <div class="col-12 col-md-6" role="presentation">
+            <ng-lottie [options]="lottieLogoOptions" containerClass="home-lottie" width="75%"></ng-lottie>
         </div>
     </div>
-
-    <div class="col-12 col-md-6">
-        <ng-lottie [options]="lottieLogoOptions" containerClass="home-lottie" width="75%"></ng-lottie>
-    </div>
-</div>
+</main>

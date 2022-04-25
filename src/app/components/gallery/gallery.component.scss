@@ -2,8 +2,11 @@
 @import '~/src/styles/variables';
 
 .page {
-    background-color: $color-white;
     overflow-y: scroll;
+}
+
+.page, .gallery-container {
+    background-color: $color-white;
 }
 
 .work-title {

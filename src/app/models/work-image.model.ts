@@ -1,6 +1,6 @@
 export class WorkImage {
 
-    descrpition!: string;
+    alt!: string;
     src!: string;
     link?: string;
 
