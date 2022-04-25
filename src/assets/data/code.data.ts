@@ -24,17 +24,20 @@ export const CodeData: Work[] =  [
 			}),
 			new WorkTool({
 				name: 'Angular Universal'
-			}),
+			})
 		],
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/ordering-1.png',
+				alt: 'Hell\'s pizza menu displayed on a black background website with bone-colored text and individual product images'
 			}),
 			new WorkImage({
 				src: 'assets/gallery/develop/ordering-3.png',
+				alt: 'A opened "Greed" pizza item dialog, with pizza customization options and product photo'
 			}),
 			new WorkImage({
 				src: 'assets/gallery/develop/ordering-2.png',
+				alt: 'A two phone side-by-side ordering example. One a list view of the Hell menu, and the other a "Grimm" pizza item page with customization options and product photo'
 			}),
 		],
 		links: [
@@ -64,6 +67,7 @@ export const CodeData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/uber.png',
+				alt: 'Uber Eats text and fork logo on a black background'
 			}),
 		]
 	}),
@@ -87,6 +91,7 @@ export const CodeData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/drive-1.png',
+				alt: 'A top-down photo of a phone laying on grey marble. A driver app displayed on the phone screen. 3 mini skulls are to the phones left and a mini hurse vehicle on it\'s right.'
 			})
 		]
 	}),
@@ -104,6 +109,7 @@ export const CodeData: Work[] =  [
 		images: [
 			new WorkImage({
 				src: 'assets/gallery/develop/training-1.png',
+				alt: 'A web application training portal displaying user statistics and different training modules.'
 			}),
 		]
 	})
