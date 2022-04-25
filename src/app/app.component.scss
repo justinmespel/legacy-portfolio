@@ -67,6 +67,9 @@
     height: 100%;
     width: 100%;
     position: absolute;
+    list-style-type: none;
+    list-style-position:inside;
+    padding: 0;
 
     display: flex;
     justify-content: center;
@@ -83,7 +86,7 @@
         transform: translate(0%,0%);    
     }
 
-    p {
+    li {
         margin: 0;
         padding: 1.7rem;
         font-size: 3rem;

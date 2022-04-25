@@ -2,22 +2,22 @@
     <app-nav-bar class="d-flex w-100 h-100"></app-nav-bar>
 </div>
 
-<div class="mobile-header d-md-none" (click)="toggleMobileMenu()">
-
+<div class="mobile-header d-md-none" (click)="toggleMobileMenu()" role="button" aria-label="Mobile navigation menu toggle">
     <img [ngClass]="{'is-active' : showMobileMenu}" class="logo" src="assets/icons/j-logo.svg" alt="home-button-icon">
-
     <img [ngClass]="{'is-hidden' : showMobileMenu}" class="burger-menu-bars" src="assets/icons/hamburger.svg" alt="open-menu-icon" >
-  
     <img [ngClass]="{'is-active' : showMobileMenu}" class="burger-menu-times" src="assets/icons/times.svg" alt="close-menu-icon" >
 </div>
 
-<div class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
-    <p *ngFor="let section of mobileMenu"><span (click)="toggleMobileMenu()" [routerLink]="section.route">
-        {{section.name}}
-    </span></p>
-</div>
+<nav role="navigation" aria-label="mobile-navigation-list">
+    <ul class="mobile-nav" [ngClass]="{'is-active' : showMobileMenu}">
+        <li *ngFor="let section of mobileMenu">
+            <span (click)="toggleMobileMenu()" [routerLink]="section.route">{{section.name}}</span>
+        </li>
+    </ul>
+</nav>
 
 <div class="router-container">
     <router-outlet ></router-outlet>
 </div>
+
 
