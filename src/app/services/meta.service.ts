@@ -9,8 +9,8 @@ export class MetaService {
     private tagTitle: string = "title"
     private tagDescription: string = "description";
 
-    private defaultTitle: string = "Just.in";
-    private defaultDescription: string = "A UX/UI showcase for Web and Apps";
+    public readonly defaultTitle: string = "Just.in";
+    public readonly defaultDescription: string = "A UX/UI showcase for Web and Apps";
 
     constructor(
         private meta: Meta,
@@ -34,7 +34,7 @@ export class MetaService {
         this.meta.updateTag({name: this.tagTitle, content: newTitle}, "name=" + this.tagTitle);
     }
 
-    public updateDescription(content: string) {
+    public updateDescription(content?: string) {
 
       let newDescription = this.defaultDescription;
 
