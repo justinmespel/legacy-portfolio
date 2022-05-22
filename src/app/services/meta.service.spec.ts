@@ -24,20 +24,14 @@ describe('MetaService', () => {
     expect(service.defaultDescription.length).toBeGreaterThan(1);
   });
 
-  it('#updateTitle meta tag function should exist', () => {
-    expect(typeof service.updateTitle() === 'function').toBe(true);
+  it('#updateTitle meta tag method should exist', () => {
+    expect(typeof service.updateTitle).toBeDefined();
+    service.updateTitle('test');
   });
 
-  it('#updateDescription meta tag function should exist', () => {
-    expect(typeof service.updateDescription() === 'function').toBe(true);
+  it('#updateDescription meta tag method should exist', () => {
+    expect(typeof service.updateDescription).toBeDefined();
+    service.updateDescription('test');
   });
 
-
-  it('#updateTitle function should accept param override', () => {
-    expect(service.updateTitle('test'));
-  });
-
-  it('#updateDescription function should accept param override', () => {
-    expect(service.updateDescription('test'));
-  });
 });

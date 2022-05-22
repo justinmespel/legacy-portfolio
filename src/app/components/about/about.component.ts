@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { AnimationOptions } from 'ngx-lottie';
-
+import { MetaService } from 'src/app/services/meta.service';
 
 @Component({
 	selector: 'app-about',
@@ -25,6 +25,10 @@ export class AboutComponent {
 		path: 'assets/animations/about-design.json'
 	};
 
-	constructor() { }
+	constructor(
+        private metaService: MetaService
+    ) { 
+        this.metaService.updateTitle('About');
+    }
 
 }
