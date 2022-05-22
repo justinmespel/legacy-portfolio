@@ -105,7 +105,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles/styles.scss",
+              "src/styles/layout.scss",
+              "src/styles/responsive.scss"
             ],
             "scripts": []
           }

@@ -1,5 +1,4 @@
 import { AnimationPlayer, AnimationBuilder, AnimationMetadata, style, animate } from "@angular/animations";
-import { ThrowStmt } from "@angular/compiler";
 import { Directive, Input, ElementRef } from "@angular/core";
 import { FaderProperties } from "../interfaces/fader.interface";
 

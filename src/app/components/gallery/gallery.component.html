@@ -1,8 +1,8 @@
-<main class="page" [attr.aria-label]="isCodeView() ? 'Develop' : 'Design' + ' showcase content'">
+<main class="page" [attr.aria-label]="isCodeView ? 'Develop' : 'Design' + ' showcase content'">
 
     <div class="page-heading">
         <div class="hr-container"><hr /></div>
-        <h1 class="m-0">{{isCodeView() ? 'Develop' : 'Design'}}</h1>
+        <h1 class="m-0">{{isCodeView ? 'Develop' : 'Design'}}</h1>
     </div>
 
     <div class="gallery-container" *ngFor="let work of fetchedWorks; let wi = index; let odd = odd">

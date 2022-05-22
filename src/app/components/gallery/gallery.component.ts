@@ -20,22 +20,23 @@ export class GalleryComponent implements OnInit {
 	private DESIGN_VIEW = 'design';
     public fetchedWorks!: Work[];
 
-	public view: string = 'Design';
+	public view: string | null = null;
+    public isCodeView: boolean = false;
 
     constructor(
 		private router: Router,
         private appService: AppService,
 		private metaService: MetaService
     ) { 
+        // Get the current route via the router to determine the view
+		this.view = this.router.url.substring(1);
 	}
 
     ngOnInit(): void {
 		
-		// Get the current route via the router to determine the view
-		this.view = this.router.url.substring(1);
-
 		if (this.view === this.CODE_VIEW) {
 
+            this.isCodeView = true;
 			this.metaService.updateTitle("Develop");
 
 			this.appService.getCodeGalleryData()
@@ -57,14 +58,9 @@ export class GalleryComponent implements OnInit {
 		} else {
 			// Unknown - navigate home
 			this.router.navigate(['']);
-		}
-
-		
+        }
+	
     }
-
-	public isCodeView(): boolean {
-		return this.view === this.CODE_VIEW;
-	}
     
 
 }
