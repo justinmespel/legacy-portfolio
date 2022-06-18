@@ -33,7 +33,14 @@
     }
 }
 
-
+// Override carousel styles
+.visually-hidden {
+    display: none;
+}
+.carousel-control-next, .carousel-control-prev {
+    background: none;
+    border: none;
+}
 .hide-first-arrow .carousel-control-prev {
     display:none;
 }

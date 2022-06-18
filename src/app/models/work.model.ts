@@ -1,6 +1,5 @@
 import { WorkTool } from './work-tool.model';
 import { WorkLink } from './work-link.model';
-import { ThrowStmt } from '@angular/compiler';
 import { WorkImage } from './work-image.model';
 
 export class Work {

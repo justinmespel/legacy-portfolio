@@ -35,7 +35,7 @@
                 
             </div>
             <div class="col-12 col-md-7" [ngClass]="{'hide-first-arrow': (work.images.length === 1),'hide-last-arrow': (work.images.length === 1)}" >
-                <ngb-carousel #carousel [showNavigationIndicators]="false" [interval]="0" role="group">
+                <ngb-carousel #carousel [showNavigationIndicators]="false"  [interval]="0" role="group" [animation]="false">
                     <ng-template ngbSlide *ngFor="let image of work?.images; let i = index">
                         <div class="slide-img-wrapper">
                             <img [src]="image.src" alt="{{image.alt}}">
