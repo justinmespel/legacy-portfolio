@@ -1,6 +1,11 @@
 @import '~/src/styles/styles.scss';
 @import '~/src/styles/variables';
 
+.image-box-shadow {
+    -webkit-box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28); 
+    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28);
+}
+
 .page {
     overflow-y: scroll;
 }
@@ -18,12 +23,6 @@
 .work-description {
     white-space: pre-line;
 }
-
-.carousel {
-    -webkit-box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28); 
-    box-shadow: 2px 5px 10px 1px rgba(0,0,0,0.28);
-}
-
 .slide-img-wrapper {
     display: flex;
 
@@ -34,12 +33,28 @@
 }
 
 
+// Override carousel styles
+.visually-hidden {
+    display: none;
+}
+.carousel {
+    @extend .image-box-shadow;
+}
+.carousel-control-next, .carousel-control-prev {
+    background: none;
+    border: none;
+}
 .hide-first-arrow .carousel-control-prev {
     display:none;
 }
 
 .hide-last-arrow .carousel-control-next {
     display: none;
+}
+
+.skeleton-loader {
+    @extend .image-box-shadow;
+    display: flex;
 }
 
 @media (min-width: #{$size-md}) {
