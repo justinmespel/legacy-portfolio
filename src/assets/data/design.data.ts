@@ -36,15 +36,5 @@ export const DesignData: Work[] =  [
 				alt: 'Minimalist yoga poster design with white text and maroon background. Displayed against a white wall on a wooden floor'
 			})
 		]
-	}),
-	new Work({
-		title: 'Application Icons',
-		description: 'Clean and exciting module icons for a training application.\n\nThese were designed to engage a specific target audience, and bring a bit of fun to a process that may seem \“tedious\”.',
-		images: [
-			new WorkImage({
-				src: 'assets/gallery/design/training.png',
-				alt: 'Icons illustrated in dark grey on a red background, layed out in a 3 by 3 grid for a training application'
-			})
-		]
-	}),
+	})
 ]
